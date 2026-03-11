@@ -1,0 +1,23 @@
+Duration: 21ms
+Is correct: 1
+Rows: 250
+
+Duration: 195ms
+Is correct: 1
+Rows: 500
+
+Duration: 734ms
+Is correct: 1
+Rows: 750
+
+Duration: 1720ms
+Is correct: 1
+Rows: 1000
+
+Duration: 6368ms
+Is correct: 1
+Rows: 1500
+
+Duration: 18216ms
+Is correct: 1
+Rows: 2000

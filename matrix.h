@@ -3,16 +3,19 @@
 
 
 #include <iostream>
+#include <fstream>
 #include <exception>
 #include <algorithm>
 #include <chrono>
 
+
 template <class T>
 class Matrix {
-	T* _elements;
-	size_t _rows;
-	size_t _cols;
+	T* _elements = nullptr;
+	size_t _rows = 0;
+	size_t _cols = 0;
 public:
+    Matrix() = default;
     Matrix(size_t rows, size_t cols) : _rows(rows), _cols(cols) {
         if (_rows * _cols == 0)
         {
@@ -127,6 +130,68 @@ public:
 		return result;
 	}
 };
+
+
+struct Info
+{
+    Matrix<int> matrix;
+    std::chrono::milliseconds duration = std::chrono::milliseconds(0);
+    bool is_correct = false;
+    Info() = default;
+    void graphic()
+    {
+        std::ofstream fout;
+        fout.open("graphic.txt", std::ios::app);
+
+        if (!fout.is_open())
+        {
+            throw std::exception("Failed to save result");
+        }
+        fout << matrix.cols() << " " << duration.count() << "\n";
+
+        fout.close();
+    }
+};
+
+
+std::ostream& operator<<(std::ostream& os, const Info& s)
+{
+    os << "Duration: " << s.duration << "\n";
+    os << "Is correct: " << s.is_correct << "\n";
+    os << "Rows: " << s.matrix.rows() << "\n\n";
+    return os;
+};
+
+
+
+Info multiply_matrix(Matrix<int>& a, Matrix<int>& b)
+{
+    if (a.cols() != b.cols() && a.rows() != a.cols() && b.rows() != b.cols())
+    {
+        throw std::invalid_argument("Matrix must be N*N!");
+    }
+    std::cout << "Start\n";
+    Matrix<int> result(a.rows(), a.cols());
+    auto start = std::chrono::high_resolution_clock::now();
+    for (int i = 0; i < a.rows(); i++)
+    {
+        for (int j = 0; j < b.cols(); j++)
+        {
+            int sum = 0;
+            for (int k = 0; k < a.cols(); k++)
+            {
+                sum += a(i, k) * b(k, j);
+            }
+            result(i, j) = sum;
+        }
+    }
+    Info res;
+    auto stop = std::chrono::high_resolution_clock::now();
+    res.matrix = result;
+    std::cout << "Finish multiply\n";
+    res.duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start);
+    return res;
+}
 
 template <typename T>
 std::ostream& operator<<(std::ostream& os, const Matrix<T>& Matrix)

@@ -1,5 +1,3 @@
-#include <iostream>
-#include <fstream>
 #include "matrix.h"
 
 using namespace std;
@@ -12,14 +10,11 @@ void save_mat(const string& filename, Matrix<int>& res)
     f.close();
 }
 
-
-void save_res(const string& filename, Matrix<int>& res, chrono::milliseconds time, bool check)
+void save_res(const string& filename, Info res)
 {
     ofstream f;
-    f.open(filename);
-    f << res.cols() << "\n" << res;
-    f << "Time: " << time << "\n";
-    f << "Is Correct: " << check;
+    f.open(filename, ios::app);
+    f << res;
     f.close();
 }
 
@@ -75,25 +70,24 @@ int main() {
 
     fb.close();
 
-    auto start = chrono::high_resolution_clock::now();
-    Matrix<int> res = a * b;
-    auto stop = chrono::high_resolution_clock::now();
+    auto res = multiply_matrix(a, b);
 
-    auto time = chrono::duration_cast<chrono::milliseconds>(stop - start);
 
-    save_mat("Res.txt", res);
+    save_mat("Res.txt", res.matrix);
 
 
     int status = system("python proverka.py A.txt B.txt Res.txt");
 
-    bool check = !status;
+    res.is_correct = !status;
 
     if (status == -1)
     {
         cout << "Error in check result";
     }
 
-    save_res("result.txt", res, time, check);
+    save_res("result.txt", res);
+
+    res.graphic();
 
     cout << "Done\n";
 
