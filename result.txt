@@ -1,0 +1,107 @@
+
+
+Duration: 17954ms
+Is correct: 1
+Threads: 2
+Rows: 2000
+
+Duration: 8293ms
+Is correct: 1
+Threads: 4
+Rows: 2000
+
+Duration: 5959ms
+Is correct: 1
+Threads: 8
+Rows: 2000
+
+Duration: 3238ms
+Is correct: 1
+Threads: 12
+Rows: 2000
+
+Duration: 2799ms
+Is correct: 1
+Threads: 2
+Rows: 1500
+
+Duration: 1589ms
+Is correct: 1
+Threads: 4
+Rows: 1500
+
+Duration: 992ms
+Is correct: 1
+Threads: 8
+Rows: 1500
+
+Duration: 917ms
+Is correct: 1
+Threads: 12
+Rows: 1500
+
+Duration: 868ms
+Is correct: 1
+Threads: 2
+Rows: 1000
+
+Duration: 371ms
+Is correct: 1
+Threads: 4
+Rows: 1000
+
+Duration: 692ms
+Is correct: 1
+Threads: 8
+Rows: 1000
+
+Duration: 578ms
+Is correct: 1
+Threads: 12
+Rows: 1000
+
+Duration: 333ms
+Is correct: 1
+Threads: 2
+Rows: 750
+
+Duration: 180ms
+Is correct: 1
+Threads: 4
+Rows: 750
+
+Duration: 155ms
+Is correct: 1
+Threads: 8
+Rows: 750
+
+Duration: 127ms
+Is correct: 1
+Threads: 12
+Rows: 750
+
+Duration: 544599ms
+Is correct: 1
+Threads: 1
+Rows: 5000
+
+Duration: 185136ms
+Is correct: 1
+Threads: 2
+Rows: 5000
+
+Duration: 118567ms
+Is correct: 1
+Threads: 4
+Rows: 5000
+
+Duration: 81529ms
+Is correct: 1
+Threads: 8
+Rows: 5000
+
+Duration: 71925ms
+Is correct: 1
+Threads: 12
+Rows: 5000
+
