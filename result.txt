@@ -1,0 +1,25 @@
+Duration: 15338 ms
+Is correct: 1
+Processes: 1
+Rows: 2000
+
+Duration: 7593 ms
+Is correct: 1
+Processes: 2
+Rows: 2000
+
+Duration: 4084 ms
+Is correct: 1
+Processes: 4
+Rows: 2000
+
+Duration: 2198 ms
+Is correct: 1
+Processes: 8
+Rows: 2000
+
+Duration: 1083 ms
+Is correct: 1
+Processes: 16
+Rows: 2000
+
