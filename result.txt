@@ -1,0 +1,100 @@
+Duration: 22 ms
+Is correct: 1
+Processes: 1
+Rows: 250
+
+Duration: 9 ms
+Is correct: 1
+Processes: 2
+Rows: 250
+
+Duration: 5 ms
+Is correct: 1
+Processes: 4
+Rows: 250
+
+Duration: 5 ms
+Is correct: 1
+Processes: 8
+Rows: 250
+
+Duration: 206 ms
+Is correct: 1
+Processes: 1
+Rows: 500
+
+Duration: 112 ms
+Is correct: 1
+Processes: 2
+Rows: 500
+
+Duration: 65 ms
+Is correct: 1
+Processes: 4
+Rows: 500
+
+Duration: 55 ms
+Is correct: 1
+Processes: 8
+Rows: 500
+
+Duration: 2223 ms
+Is correct: 1
+Processes: 1
+Rows: 1000
+
+Duration: 1153 ms
+Is correct: 1
+Processes: 2
+Rows: 1000
+
+Duration: 575 ms
+Is correct: 1
+Processes: 4
+Rows: 1000
+
+Duration: 462 ms
+Is correct: 1
+Processes: 8
+Rows: 1000
+
+Duration: 29045 ms
+Is correct: 1
+Processes: 1
+Rows: 2000
+
+Duration: 8364 ms
+Is correct: 1
+Processes: 2
+Rows: 2000
+
+Duration: 4290 ms
+Is correct: 1
+Processes: 4
+Rows: 2000
+
+Duration: 3686 ms
+Is correct: 1
+Processes: 8
+Rows: 2000
+
+Duration: 4647 ms
+Is correct: 1
+Processes: 1
+Rows: 1500
+
+Duration: 2670 ms
+Is correct: 1
+Processes: 2
+Rows: 1500
+
+Duration: 2005 ms
+Is correct: 1
+Processes: 4
+Rows: 1500
+
+Duration: 1285 ms
+Is correct: 1
+Processes: 8
+Rows: 1500
+
