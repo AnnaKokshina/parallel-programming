@@ -1,0 +1,99 @@
+Duration: 353 us
+Is correct: 1
+Block size: 8
+Rows: 500
+
+Duration: 329 us
+Is correct: 1
+Block size: 16
+Rows: 500
+
+Duration: 341 us
+Is correct: 1
+Block size: 32
+Rows: 500
+
+Duration: 339 us
+Is correct: 1
+Block size: 64
+Rows: 500
+
+Duration: 729 us
+Is correct: 1
+Block size: 8
+Rows: 800
+
+Duration: 743 us
+Is correct: 1
+Block size: 16
+Rows: 800
+
+Duration: 750 us
+Is correct: 1
+Block size: 32
+Rows: 800
+
+Duration: 766 us
+Is correct: 1
+Block size: 64
+Rows: 800
+
+Duration: 1009 us
+Is correct: 1
+Block size: 8
+Rows: 1000
+
+Duration: 1219 us
+Is correct: 1
+Block size: 16
+Rows: 1000
+
+Duration: 1132 us
+Is correct: 1
+Block size: 32
+Rows: 1000
+
+Duration: 1189 us
+Is correct: 1
+Block size: 64
+Rows: 1000
+
+Duration: 2528 us
+Is correct: 1
+Block size: 8
+Rows: 1600
+
+Duration: 2412 us
+Is correct: 1
+Block size: 16
+Rows: 1600
+
+Duration: 2618 us
+Is correct: 1
+Block size: 32
+Rows: 1600
+
+Duration: 2559 us
+Is correct: 1
+Block size: 64
+Rows: 1600
+
+Duration: 4289 us
+Is correct: 1
+Block size: 8
+Rows: 2000
+
+Duration: 4277 us
+Is correct: 1
+Block size: 16
+Rows: 2000
+
+Duration: 4312 us
+Is correct: 1
+Block size: 32
+Rows: 2000
+
+Duration: 4580 us
+Is correct: 1
+Block size: 64
+Rows: 2000
